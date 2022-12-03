@@ -28,6 +28,10 @@ https://docs.adonisjs.com/guides/database/introduction#drivers-config
 ```
 >adonis migration:run
 ```
+## Crear un controlador
+```
+>adonis make:controller ProductosController
+```
 
 ## Ver todos los comandos
 ```

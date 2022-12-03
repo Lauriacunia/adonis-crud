@@ -1,5 +1,4 @@
 'use strict'
-
 /*
 |--------------------------------------------------------------------------
 | Routes
@@ -20,7 +19,10 @@ Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
 
-const productosModel = use('App/Models/Producto') 
-Route.get("/productos", () => {
-  return productosModel.all()
-});
+// No necesita que importe el controlador porque lo hace automaticamente
+
+Route.get('/productos', 'ProductosController.getAll');
+Route.get('/productos/:id', 'ProductosController.getOne');
+Route.post('/productos', 'ProductosController.create');
+Route.put('/productos/:id', 'ProductosController.update');
+Route.delete('/productos/:id', 'ProductosController.delete');
