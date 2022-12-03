@@ -19,3 +19,8 @@ const Route = use('Route')
 Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
+
+const productosModel = use('App/Models/Producto') 
+Route.get("/productos", () => {
+  return productosModel.all()
+});

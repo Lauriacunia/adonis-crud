@@ -28,3 +28,8 @@ https://docs.adonisjs.com/guides/database/introduction#drivers-config
 ```
 >adonis migration:run
 ```
+
+## Ver todos los comandos
+```
+>adonis 
+```
