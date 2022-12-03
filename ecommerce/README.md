@@ -1,4 +1,4 @@
-# Adonis 
+# Adonis CRUD
 ## Instalar CLI globalmente
 ```
 >npm i --global @adonisjs/cli
